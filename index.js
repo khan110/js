@@ -153,8 +153,30 @@ let student1 = new Students('Marry', 20, 2)
  function a (...arr1){
      return `returning array from function ${arr1}`
  }
-
  
  console.log(a(arr1))
+////////////////////
 
- 
+
+ const sum = (a,b,c,d,e) =>{ return a+b+c+d+e}
+
+ const res = sum(...arr1)
+
+ console.log(res)
+
+
+
+////////////////////////////////
+
+
+function addtask () {
+ let input = document.getElementById('task');
+ let ul = document.getElementById('ul')
+ let value = input.value
+ let li = document.createElement('li')
+ let text = document.createTextNode(value)
+ li.appendChild(text)
+ ul.appendChild(li)
+
+
+}
