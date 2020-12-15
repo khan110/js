@@ -180,3 +180,64 @@ function addtask () {
 
 
 }
+
+
+
+//////
+
+let books = [{id:0, name:"Harry potter", author:"abc", publicationDate:"May 2019",genre:"fiction"},
+            {id:1, name:"Lion king", author:"xyz", publicationDate:"Aug 2019",genre:"adventure"},
+            {id:2, name:"Lord of rings", author:"zzz", publicationDate:"June 2019",genre:"action"}
+            ]
+
+
+
+        var  result = books.map((item)=>(item.author))            
+   console.log(result)
+
+
+let book = {
+    name:"Harry potter",
+     author:"abc",
+      publicationDate:"May 2019",
+      genre:"fiction"}
+
+let { name, author, publicationDate, genre} = book
+
+console.log(book)
+
+      for (let item in book){
+         // console.log(book[item])
+      }
+//make an array of even numbers and double each number and save it in new array. Copy the values of arr2 in arr1 with the help of spread op.
+
+      let even = [2,4,6,8,10]
+      let newArr = even.map((item)=> item*2)
+   /////
+   let arr2=[4,5,6]
+   let arr11=[1,2,3,...arr2]
+   
+   
+   console.log(arr11)
+
+   ////let arr = [1,2,3,4,5,6] Make new array with name newArr. and copy the values of arr in newArr with the help of spread op
+
+
+
+   let arr3 = [1,2,3,4,5,6]
+   let newArr11 = [...arr3]
+ /////let obj = {name: 'Civic', model:2020, color:'grey'} Show each property of an object. Hint: First extract variables from an object the help of destructuring then show these variables in console.log.
+ 
+
+ let car = {name1:"Civic",
+            model1:2020,
+            color1:"grey"  }
+
+            //destructuting 
+            let {name1, model1, color1} = car
+             console.log(car)
+     // for in loop
+          for (let item in car) {
+             console.log(car[item]) 
+          }
+      
